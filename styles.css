@@ -1,0 +1,283 @@
+body, h1, h2, h3, p, ul, li, nav, div, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1150px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-photo {
+    border-radius: 0%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.card {
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.surf-image {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.surf-image:last-child {
+    margin-right: 0;
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-self: center;
+}
+
+.image-text {
+    font-size: 14px;
+}
+
+table td {
+    padding: 10px;
+    background-color: lightblue;
+    border: 2px black solid;
+}
+
+table thead {
+    background-color: darkblue;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: black 2px solid;
+    background-color: lightgray; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #007bff;}
+
+.contact {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 15px;
+    margin: 9,25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color .5s ease-out;
+}
+
+.contact input {
+    transition: background-color .5s ease-out;
+}
+
+.contact textarea:invalid,
+.contact input:invalid {
+    border-color: red;
+    background-color: lightcoral;
+
+}
+
+.contact textarea:required,
+.contact input:required {
+    border-color: black;
+}
+
+
+.contact input:optional {
+    border-color: grey;
+    background-color: lightgrey;
+}
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .image-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-container {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .surf-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    footer {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+        align-items: center;
+    }
+
+    table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    table thead {
+        font-size: 16px;
+    }
+
+}
